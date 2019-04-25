@@ -18,7 +18,7 @@ export default {
     // TODO: Detect iOS Accuracy?
     return LocationMode.HIGH_ACCURACY;
   },
-  requestHighAccuracyMode: (options = {}) => {
+  requestLocationSettings: (options = {}) => {
     if (Platform.OS === 'android') {
       return RNGeolocationHelper.requestLocationSettings(options.title, options.message);
     }
