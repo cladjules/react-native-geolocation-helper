@@ -37,8 +37,8 @@ GeolocationHelper.getLocationMode().then(locationMode => {
 #### `requestLocationSettings(?title, ?message)`
 Display a modal to prompt the user to enable High accuracy,
 redirects the user to the Location Settings Page `ACTION_LOCATION_SOURCE_SETTINGS` when clicking `OK`.
-**resolve**: resolve if highAccuracy is enabled or users clicks OK on the modal.
-**reject**: reject if highAccuracy not enabled and users clicks Cancel on the modal.
+- **resolve**: resolve if highAccuracy is enabled or users clicks OK on the modal.
+- **reject**: reject if highAccuracy not enabled and users clicks Cancel on the modal.
 
 | Param | Default |
 | -- | -- |
@@ -47,7 +47,7 @@ redirects the user to the Location Settings Page `ACTION_LOCATION_SOURCE_SETTING
 
 #### `getLocationMode()`
 Return the current location mode enabled on the device.
-**resolve**: return a value from `LocationMode`
+- **resolve**: return a value from `LocationMode`
 
 | LocationMode |
 | -- |
