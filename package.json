@@ -1,6 +1,6 @@
 {
   "name": "react-native-geolocation-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "helpers for android geolocation and high accuracy detection",
   "main": "index.js",
   "scripts": {
