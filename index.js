@@ -16,7 +16,7 @@ export default {
     }
 
     // TODO: Detect iOS Accuracy?
-    return LocationMode.HIGH_ACCURACY;
+    return Promise.resolve(LocationMode.HIGH_ACCURACY);
   },
   requestLocationSettings: (options = {}) => {
     if (Platform.OS === 'android') {
@@ -24,6 +24,6 @@ export default {
     }
 
     // TODO: Detect iOS Accuracy?
-    return LocationMode.HIGH_ACCURACY;
+    return Promise.resolve(LocationMode.HIGH_ACCURACY);
   },
 };
